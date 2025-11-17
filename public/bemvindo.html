@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boas-vindas</title>
+  <link rel="stylesheet" href="/css/styleBemvindo.css" />
+</head>
+<body>
+  <div class="bemvindo-card">
+    <h1>Boas-vindas 👋</h1>
+    <p>Que bom te ver por aqui, <span class="nome" id="nomeUsuario"></span>!</p>
+    <button onclick="window.location.href='/'">Voltar para o início</button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nome = params.get('nome') || '';
+    document.getElementById('nomeUsuario').textContent = nome;
+  </script>
+</body>
+</html>
