@@ -3,10 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boas-vindas</title>
+  <title>Sobre nosso apartamento</title>
   <link rel="stylesheet" href="/css/styleBemvindo.css" />
 </head>
 <body>
+
+    <!-- MENU Flutuante -->
+  <nav class="navbar">
+    <div class="logo">Menu</div>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+    <!-- Botao do tipo hamburguer para melhorar a responsividade  -->
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Sobre nosso apartamento</a></li>
+      <li><a href="#sobre">Living Room</a></li>
+      <li><a href="#projetosPessoais">Sacada</a></li>
+      <li><a href="#projetosGuiados">Banheiro</a></li>
+      <li><a href="#curriculo">Escritório</a></li>
+      <li><a href="#curriculo">Quarto do Casal</a></li>
+      <li><a href="#curriculo">Lista de Presentes</a></li>
+    </ul>
+  </nav>
+  
   <div class="bemvindo-card">
     <h1>Boas-vindas 👋</h1>
     <p>Que bom te ver por aqui, <span class="nome" id="nomeUsuario"></span>!</p>
@@ -18,5 +36,7 @@
     const nome = params.get('nome') || '';
     document.getElementById('nomeUsuario').textContent = nome;
   </script>
+
+
 </body>
 </html>
